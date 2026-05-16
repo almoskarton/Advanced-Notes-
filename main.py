@@ -14,13 +14,13 @@ def resource_path(relative_path):
     return os.path.join(base_path, relative_path)
 
 
-# HTML
+
 HTML_PATH = resource_path("html/index.html")
 
-# ICON
+
 ICON_PATH = resource_path("icon.ico")
 
-# JSON AZ EXE MELLETT
+
 EXE_DIR = os.path.dirname(sys.executable) if getattr(sys, 'frozen', False) else os.path.dirname(os.path.abspath(__file__))
 
 DATA_PATH = os.path.join(EXE_DIR, "notes.json")
